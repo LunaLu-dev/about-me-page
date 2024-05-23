@@ -2,7 +2,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/fireba
 import { getStorage } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-storage.js";
 import { getAuth } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
 import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-analytics.js";
+import { getAnalytics, logEvent } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-analytics.js";
 import { getPerformance } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-performance.js";
 import { initializeAppCheck, ReCaptchaV3Provider } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app-check.js";
 
@@ -27,3 +27,32 @@ const appCheck = initializeAppCheck(app, {
   isTokenAutoRefreshEnabled: true
 });
 
+export function openLink(index){
+
+  const link_names = ["discord", "Twitch", "VRChat", "Reddit", "Github", "YouTube", "Twitter", "Planet Minecraft", "Pinterest", "Wishlist"];
+  const link_address = [
+    'https://discord.com/users/1098996480011944017', 
+    'https://www.twitch.tv/lunaluplayz', 
+    'https://vrchat.com/home/user/usr_19d6e456-23a6-41d4-8d0a-cf0ddd305e47', 
+    'https://www.reddit.com/user/LunaLu_04',
+    'https://github.com/LunaLu-dev',
+    'https://www.youtube.com/@Luna_Lu1',
+    'https://x.com/LunaLuplayz',
+    'https://www.planetminecraft.com/member/_luna04_/',
+    'https://www.pinterest.co.uk/lunaplayz04/',
+    'https://wishlist.aiboteri.net/user/4OKjWZpFk3Qt4pvsSAjS687svqj2'
+  ];
+
+  const link_name = link_names[index];
+  const logData = {
+    eventCategory: "Link Click",
+    eventAction: "Open Link",
+    eventLabel: link_name,
+    linkAddress: link_address[index]
+  };
+
+  logEvent(analytics, link_name, logData);
+
+  window.open(window.open(link_address[index]));
+
+}
