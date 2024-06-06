@@ -29,7 +29,20 @@ const appCheck = initializeAppCheck(app, {
 
 export function openLink(index){
 
-  const link_names = ["discord", "Twitch", "VRChat", "Reddit", "Github", "YouTube", "Twitter", "Planet Minecraft", "Pinterest", "Wishlist"];
+  const link_names = [
+    "discord", 
+    "Twitch", 
+    "VRChat", 
+    "Reddit", 
+    "Github", 
+    "YouTube", 
+    "Twitter", 
+    "Planet Minecraft", 
+    "Pinterest", 
+    "Wishlist", 
+    "Steam"
+  ];
+  
   const link_address = [
     'https://discord.com/users/1098996480011944017', 
     'https://www.twitch.tv/lunaluplayz', 
@@ -40,7 +53,8 @@ export function openLink(index){
     'https://x.com/LunaLuplayz',
     'https://www.planetminecraft.com/member/_luna04_/',
     'https://www.pinterest.co.uk/lunaplayz04/',
-    'https://wishlist.aiboteri.net/user/4OKjWZpFk3Qt4pvsSAjS687svqj2'
+    'https://wishlist.aiboteri.net/user/4OKjWZpFk3Qt4pvsSAjS687svqj2',
+    'https://steamcommunity.com/id/_LunaLu_/'
   ];
 
   const link_name = link_names[index];
