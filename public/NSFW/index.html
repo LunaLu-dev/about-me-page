@@ -7,15 +7,17 @@
     <link rel="stylesheet" href="style.css">
     <script type="module" src="index.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" type="text/css">
+    <script type="module">
+      import { openLink } from "./index.js";
+      window.openLink = openLink;
+    </script>
   </head>
   <body>
-    <center>
+    <div style="text-align: center;">
       <img src="https://ugc.production.linktr.ee/46df6e62-3c24-4630-8ec2-544bb394078f_download20220400171828.png" class="profilePicturePage" onclick="window.location.pathname = ''">
       <h1>Luna Lu</h1>
-      <br>
-      <br>
-      <h1>My Pronounce</h1>
-      <h3>She/Her</h3>
-    </center>
+      <button class="link-btn" onclick="window.openLink(0)"><i class="icon fa-solid fa-triangle-exclamation"></i>BDSM Test Results</button>
+      <button class="link-btn" onclick="window.openLink(1)"><i class="icon fa-solid fa-triangle-exclamation"></i>Kink List</button>
+    </div>
   </body>
 </html>
