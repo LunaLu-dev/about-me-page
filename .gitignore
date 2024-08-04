@@ -129,4 +129,6 @@ dist
 .pnp.*
 
 .idea
-
+.firebase
+.firebaserc
+firebase.json
