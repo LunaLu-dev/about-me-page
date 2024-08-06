@@ -28,6 +28,10 @@ h1{
     margin-bottom: 10px;
 }
 
+.link-btn:hover{
+    cursor: pointer;
+}
+
 .icon{
     padding-top: 3px;
     left: 21%;
