@@ -25,7 +25,7 @@ export function openLink(index){
     'https://x.com/LunaLuplayz',
     'https://www.planetminecraft.com/member/_luna04_/',
     'https://www.pinterest.co.uk/lunaplayz04/',
-    'https://wishlist.aiboteri.net/user/4OKjWZpFk3Qt4pvsSAjS687svqj2',
+    'https://wishlist.lunalu.org/user/4OKjWZpFk3Qt4pvsSAjS687svqj2',
     'https://steamcommunity.com/id/_LunaLu_/',
     'https://open.spotify.com/user/31jo3k6nxhloleusg3tidy7ctimq?si=93424dcbf62e47ea',
     'https://only-fans.uk/LunaLu'
