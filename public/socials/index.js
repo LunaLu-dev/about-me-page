@@ -1,19 +1,4 @@
 export function openLink(index){
-  const link_names = [
-    "discord", 
-    "Twitch", 
-    "VRChat", 
-    "Reddit", 
-    "Github", 
-    "YouTube", 
-    "Twitter", 
-    "Planet Minecraft", 
-    "Pinterest", 
-    "Wishlist", 
-    "Steam",
-    "Spotify",
-    "Only-Fans"
-  ];
   
   const link_address = [
     'https://discord.com/users/1098996480011944017', 
@@ -28,16 +13,9 @@ export function openLink(index){
     'https://wishlist.lunalu.org/user/4OKjWZpFk3Qt4pvsSAjS687svqj2',
     'https://steamcommunity.com/id/_LunaLu_/',
     'https://open.spotify.com/user/31jo3k6nxhloleusg3tidy7ctimq?si=93424dcbf62e47ea',
-    'https://only-fans.uk/LunaLu'
+    'https://only-fans.uk/LunaLu',
+    'https://myanimelist.net/profile/LunaLuPlayz'
   ];
-
-  const link_name = link_names[index];
-  const logData = {
-    eventCategory: "Link Click",
-    eventAction: "Open Link",
-    eventLabel: link_name,
-    linkAddress: link_address[index]
-  };
   
   window.open(window.open(link_address[index]));
 }
