@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+body{
+    background-image: url("img/Untitled-1.jpg");
+    font-family: "Poetsen One", sans-serif;
+}
+
+h1{
+    font-size: 30px;
+}
+
+.profilePicturePage{
+    width: 15vw;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+.icon{
+    padding-top: 3px;
+    left: 21%;
+    position: absolute;
+}
+
+.main_box{
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.links_box{
+    background-color: #ffffff;
+    width: 180px;
+    height: 80px;
+    margin: 10px;
+    border-radius: 5px;
+    border-width: 3px;
+    border-color: black;
+    border-style:solid;
+    align-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.AboutMeText{
+    background-color: aliceblue; 
+    margin: 80px; 
+    margin-top: 0px; 
+    border-radius: 5px; 
+    padding: 2px;
+    overflow: hidden;
+}
