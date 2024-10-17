@@ -18,22 +18,32 @@ h1{
 
 .link-btn{
     font-family: "Poetsen One", sans-serif;
-    width: 60vw;
     height: 50px;
     font-size: 25px;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-radius: 50px;
+    margin-top: auto;
     margin-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .link-btn:hover{
     cursor: pointer;
+    background-color: #F0FFFFFF;
 }
 
 .icon{
     padding-top: 3px;
     left: 21%;
     position: absolute;
+}
+
+.link-btn > img{
+    width: 30px;
+    position: absolute;
+}
+
+.link-btn > span{
+    padding-left: 40px;
+    padding-right: 5px;
 }
