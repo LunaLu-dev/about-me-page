@@ -17,5 +17,5 @@ export function openLink(index){
     'https://myanimelist.net/profile/LunaLuPlayz'
   ];
   
-  window.open(window.open(link_address[index]));
+  window.open(link_address[index]);
 }
