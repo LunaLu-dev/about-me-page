@@ -49,4 +49,13 @@ h1{
     border-radius: 5px; 
     padding: 2px;
     overflow: hidden;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+@media (max-width: 1000px) {
+    .AboutMeText{
+        margin-left: 0!important;
+        margin-right: 0!important;
+    }
 }
