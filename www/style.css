@@ -22,7 +22,7 @@ h1{
 }
 
 .main_box{
-    display: flex; 
+    display: flex;
     flex-direction: row;
     align-items: center;
     align-content: center;
@@ -44,10 +44,18 @@ h1{
 }
 
 .AboutMeText{
-    background-color: aliceblue; 
-    margin: 80px; 
-    margin-top: 0px; 
-    border-radius: 5px; 
+    background-color: aliceblue;
+    margin-top: 0;
+    border-radius: 5px;
     padding: 2px;
     overflow: hidden;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+@media (max-width: 1000px) {
+    .AboutMeText{
+        margin-left: 0!important;
+        margin-right: 0!important;
+    }
 }
