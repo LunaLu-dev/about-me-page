@@ -25,6 +25,7 @@ h1{
     margin-bottom: 10px;
     padding-left: 20px;
     padding-right: 20px;
+
 }
 
 .link-btn:hover{
@@ -46,4 +47,14 @@ h1{
 .link-btn > span{
     padding-left: 40px;
     padding-right: 5px;
+    width: max-content;
+}
+
+@media (max-width: 600px){
+    .link-btn{
+        width: 100vw!important;
+    }
+    #div-links{
+        width: 100%!important;
+    }
 }

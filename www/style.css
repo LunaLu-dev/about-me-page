@@ -44,9 +44,8 @@ h1{
 }
 
 .AboutMeText{
-    background-color: aliceblue; 
-    margin: 80px; 
-    margin-top: 0px; 
+    background-color: aliceblue;
+    margin-top: 0;
     border-radius: 5px; 
     padding: 2px;
     overflow: hidden;
