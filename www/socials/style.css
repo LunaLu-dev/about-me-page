@@ -25,12 +25,27 @@ h1{
     margin-bottom: 10px;
     padding-left: 20px;
     padding-right: 20px;
-
+    box-shadow: #000000 1px 5px 1px;
 }
 
 .link-btn:hover{
     cursor: pointer;
+    position: relative;
     background-color: #F0FFFFFF;
+    animation: button_hover 0.5s;
+    box-shadow: #000000 0 0 0;
+    top: 5px;
+}
+
+@keyframes button_hover {
+    from {
+        box-shadow: #000000 1px 5px 1px;
+        top: 0;
+    }
+    to {
+        box-shadow: #000000 0 0 0;
+        top: 5px;
+    }
 }
 
 .icon{
@@ -52,9 +67,11 @@ h1{
 
 @media (max-width: 600px){
     .link-btn{
-        width: 100vw!important;
+        width: 100vw !important;
+        top: 0 !important;
+        box-shadow: #000000 0 0 0 !important;
     }
     #div-links{
-        width: 100%!important;
+        width: 100% !important;
     }
 }
