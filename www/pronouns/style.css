@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
 
 body{
-    background-image: url("img/Untitled-1.jpg");
+    background-image: url("../img/Untitled-1.jpg");
     font-family: "Poetsen One", sans-serif;
 }
 
@@ -22,7 +22,7 @@ h1{
 }
 
 .main_box{
-    display: flex; 
+    display: flex;
     flex-direction: row;
     align-items: center;
     align-content: center;
@@ -30,7 +30,6 @@ h1{
 }
 
 .links_box{
-
     background-color: #ffffff;
     width: 180px;
     height: 80px;
@@ -43,6 +42,9 @@ h1{
     align-items: center;
     cursor: pointer;
     box-shadow: #000000 2px 5px 1px;
+}
+.links_box > h1{
+    font-size: 20px;
 }
 
 .links_box:hover{
@@ -60,22 +62,5 @@ h1{
     to{
         box-shadow: #000000 0 0 0;
         top: 5px;
-    }
-}
-
-.AboutMeText{
-    background-color: aliceblue;
-    margin-top: 0;
-    border-radius: 5px; 
-    padding: 2px;
-    overflow: hidden;
-    margin-left: 25%;
-    margin-right: 25%;
-}
-
-@media (max-width: 1000px) {
-    .AboutMeText{
-        margin-left: 0!important;
-        margin-right: 0!important;
     }
 }
