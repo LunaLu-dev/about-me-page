@@ -22,7 +22,7 @@ h1{
 }
 
 .main_box{
-    display: flex;
+    display: flex; 
     flex-direction: row;
     align-items: center;
     align-content: center;
@@ -30,6 +30,7 @@ h1{
 }
 
 .links_box{
+
     background-color: #ffffff;
     width: 180px;
     height: 80px;
@@ -41,12 +42,31 @@ h1{
     align-content: center;
     align-items: center;
     cursor: pointer;
+    box-shadow: #000000 2px 5px 1px;
+}
+
+.links_box:hover{
+    position: relative;
+    animation: links_hover 0.5s;
+    top: 5px;
+    box-shadow: #000000 0 0 0;
+}
+
+@keyframes links_hover {
+    from{
+        box-shadow: #000000 2px 5px 1px;
+        top: 0
+    }
+    to{
+        box-shadow: #000000 0 0 0;
+        top: 5px;
+    }
 }
 
 .AboutMeText{
     background-color: aliceblue;
     margin-top: 0;
-    border-radius: 5px;
+    border-radius: 5px; 
     padding: 2px;
     overflow: hidden;
     margin-left: 25%;
