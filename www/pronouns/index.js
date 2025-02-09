@@ -44,7 +44,7 @@ function update_age(){
         year--;
     }
 
-    display.innerText = year + " years, " + month + " months, " + day + " days, " + hour + " hours, " + minute + " minutes and " + second + " seconds old";
+    display.innerText = year + " jaren, " + month + " maanden, " + day + " dagen, " + hour + " uren, " + minute + " notulen en " + second + " seconden oud";
 
 
     if (born.getDay() === now.getDay() && born.getMonth() === now.getMonth()) {
