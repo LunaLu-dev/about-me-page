@@ -14,7 +14,9 @@ export function openLink(index){
     'https://wishlist.lunalu.org/',
     'https://steamcommunity.com/id/_LunaLu_/',
     'https://open.spotify.com/user/31jo3k6nxhloleusg3tidy7ctimq?si=93424dcbf62e47ea',
-    'https://myanimelist.net/profile/LunaLuPlayz'
+    'https://myanimelist.net/profile/LunaLuPlayz',
+    'https://www.roblox.com/users/4909839132/profile',
+    'https://store.epicgames.com/en-US/u/d39af395d8974748a3824aec7c57512e'
   ];
   
   window.open(link_address[index]);
